@@ -1,7 +1,22 @@
-const numberFizzBuzz = (x) => {
+// Solve Kata:
+// Write a function that prints from 1 to x,
+// where x is the input of your function and is an integer less than 1501.
+// Print from 1 to x where x is an integer less than 1501.
+
+// If the number you are printing is evenly divisible by 3,
+// print the string “fizz” instead of the number.
+
+// If the number you are printing is evenly divisible by 5,
+// print the string “buzz” instead of the number.
+
+// If the number you are printing is evenly divisible by 3 AND evenly divisible by 5,
+// print the string “fizzbuzz” instead of the number.
+const numberFizzBuzz = (x: number) => {
   if (x < 1 || x >= 1501) {
     console.log(
-      "Oops! It appears my code was flawed || My assumption that x would NOT be an integer less than one and  NOT greater than or equal to 1501 was incorrect. Technically, that assumption was wrong after reviewing the verbiage of the problem. On further scrutiny, it appears x could be any integer < 1501 and could include all negative integers. "
+      "Oops! The parameter passed, '",
+      x,
+      "' is not an integer from 1 to 1500"
     );
     return null;
   }
