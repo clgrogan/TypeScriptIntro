@@ -27,5 +27,5 @@ class PointConstructor {
 // when declaring a custom type, you must explicitly allocate memory.
 // memory is allocated via the 'new' keyword
 // let point: PointConstructor = new PointConstructor(); ...verbose, can be shortened in TS
-let pointConst = new PointConstructor(1);
+let pointConst = new PointConstructor(1, 666);
 pointConst.draw();
